@@ -1,0 +1,20 @@
+{
+  "name": "gaming-outlaws-bot",
+  "version": "2.1.0",
+  "description": "Gaming Outlaws Discord Bot - Multi-language, graphical embeds & reaction roles, YouTube multi-channel",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.5",
+    "better-sqlite3": "^11.3.0",
+    "node-cron": "^3.0.3",
+    "rss-parser": "^3.13.0",
+    "@google/generative-ai": "^0.21.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
