@@ -1,4 +1,4 @@
-# Outlaw A.I Bot (v2.1)
+# Outlaw A.I Bot (v1.10)
 
 
 A powerful, multilingual, and AI-driven Discord bot built for community management, engagement, and advanced automation. Originally tailored for the **Gaming Outlaws** community.
@@ -103,7 +103,7 @@ Un bot Discord puissant, multilingue et propulsé par l'IA, conçu pour la gesti
 
 ---
 
-## 📈 Changelog (v2.1)
+## 📈 Changelog (v1.10)
 * Added modal interactive forms for both `/embed` and `/reactionrole`.
 * Forced YouTube alert streams into English formatting.
 * Reworked global welcome workflow to automatically inherit role-based language filters.
