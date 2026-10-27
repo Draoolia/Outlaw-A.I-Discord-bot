@@ -1,7 +1,7 @@
 # Outlaw A.I Bot (v2.1)
 
 <p align="center">
-  <img src="https://githubusercontent.com" alt="Outlaw AI Logo" width="100"/>
+  <img src="[https://githubusercontent.com](https://www.rishabhsoft.com/wp-content/uploads/2025/11/AI-Chatbot-Development.jpg)" alt="Outlaw AI Logo" width="100"/>
 </p>
 
 A powerful, multilingual, and AI-driven Discord bot built for community management, engagement, and advanced automation. Originally tailored for the **Gaming Outlaws** community.
