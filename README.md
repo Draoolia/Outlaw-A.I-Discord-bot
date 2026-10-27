@@ -37,4 +37,5 @@ Sur bot-hosting.net : upload les fichiers, mets `STARTUP_FILE=index.js`, ajoute 
 
 ---
 
-Bot créé pour Gaming Outlaws.
+Bot créé pour Gaming Outlaws Discord.
+https://discord.gg/W5eJqyukqn
