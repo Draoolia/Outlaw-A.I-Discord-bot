@@ -7,10 +7,13 @@ Bot Discord pour la communauté Gaming Outlaws.
 - Embeds graphiques (formulaire)
 - Rôles-réaction graphiques (formulaire)
 - Notifications YouTube multi-chaînes (posts en anglais)
-- Messages de bienvenue multi-langues (FR/EN/ES/BR/RU)
+- Messages de bienvenue multi-langues
+(FR/EN/ES/BR/RU)
 - Commande `/help` adaptée au rôle et à la langue
 - IA Gemini (mention du bot)
 - Annonces IA (`/annonce`)
+permet a l'I.A de poster un message dans le
+salon choisi
 - Anniversaires
 - Giveaways, modération, jeux, etc.
 
