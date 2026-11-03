@@ -93,3 +93,26 @@ Bot multifonction pour Discord — version 1.10.0
 
 ## 📂 Structure & Architecture
 
+```text
+commands/
+  admin/     → Outils de gestion administrateur / Admin management tools
+  public/    → Commandes pour les membres / Regular user interaction endpoints
+  games/     → Moteur des mini-jeux / Entertainment engine & mini-games
+  utility/   → Système d'aide et traduction / Help maps & localization modules
+events/      → Événements Discord (counting, salons, messages...) / System event streams
+utils/       → Base de données SQLite et scripts / Core SQLite controllers
+data/        → Fichiers de stockage SQLite locaux / Persistent local SQLite data stores
+```
+
+## 📦 Dépendances Principales / Main Dependencies
+
+- **discord.js v14** — Interface principale avec l'API Discord / Main Discord API wrapper
+- **better-sqlite3** — Gestion de base de données ultra-rapide / High-performance secure database framework
+- **canvacard** — Génération d'images à la volée (profil/XP) / On-the-fly automated graphic creation system
+- **discord-gamecord** — Pack de mini-jeux interactifs embarqués / Pre-built interactive mini-games
+- **discord-html-transcripts** — Générateur d'archives de tickets HTML / Professional HTML transcript compilation engine
+
+---
+*Developed for the **Gaming Outlaws Discord** community.*
+
+
