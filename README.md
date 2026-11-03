@@ -1,117 +1,95 @@
-# Outlaw A.I Bot (v1.10)
+# Gaming Outlaws Bot (Outlaw A.I.)
 
-
-A powerful, multilingual, and AI-driven Discord bot built for community management, engagement, and advanced automation. Originally tailored for the **Gaming Outlaws** community.
-
-Un bot Discord puissant, multilingue et propulsé par l'IA, conçu pour la gestion de communauté, l'engagement et l'automatisation avancée. Initialement développé pour la communauté **Gaming Outlaws**.
-
----
+Bot multifonction pour Discord — version 1.10.0
 
 ## 🌍 Language / Langue
-- [Français](#-version-française)
-- [English](#-english-version)
-
----
+- Français
+- English
 
 ## 🇫🇷 Version Française
 
 ### 🚀 Fonctionnalités
-* **Intelligence Artificielle (Gemini) :** Intégration avancée de l'IA de Google pour interagir directement avec les membres (via mention).
-* **Annonces IA (`/annonce`) :** Permet à l'IA de générer et poster un message structuré dans le salon de votre choix.
-* **Formulaires Graphiques :** Création intuitive d'embeds personnalisés (`/embed`) et de rôles-réactions (`/reactionrole`) via des interfaces natives Discord.
-* **Système Multilingue :** Gestion automatique des messages de bienvenue en plusieurs langues (FR/EN/ES/BR/RU) basée sur les rôles des utilisateurs.
-* **Commandes Dynamiques (`/help`) :** Aide contextuelle qui s'adapte automatiquement à la langue et aux permissions (Admin/Modérateur vs Membre) de l'utilisateur.
-* **Notifications YouTube :** Suivi multi-chaînes automatique avec formatage optimisé.
-* **Utilitaires et Engagement :** Modules intégrés pour les anniversaires, les giveaways, la modération et les mini-jeux.
+
+#### 🤖 Intelligence Artificielle & Annonces
+- **Intégration Gemini / Groq :** IA avancée pour interagir directement avec les membres via mention du bot.
+- **Annonces IA (`/annonce`) :** Génération automatique de messages structurés par l'IA dans le salon de ton choix.
+
+#### 📈 Niveaux & XP
+- **Cartes graphiques :** `/rank` affiche une carte graphique personnalisée (canvacard) et `/level` montre l'XP.
+- **Configuration :** `/setup-levels` pour définir les salons d'annonce, les couleurs de fond et l'XP de base.
+- **Administration :** `/xp set` pour modifier l'XP d'un membre et `/xp role` pour lier un rôle à un niveau.
+- Gain d'XP automatique et fluide par message envoyé.
+
+#### 🎫 Tickets & Formulaires
+- **Tickets avancés :** Système complet avec génération automatique d'archives et de transcripts HTML.
+- **Formulaires Graphiques :** `/embed` et `/reactionrole` pour créer des embeds et rôles-réactions via l'interface Discord.
+
+#### 🎮 Jeux & Divertissement
+- **Jeux intégrés :** `/snake`, `/slots`, `/findemoji`, `/rps`, `/connect4`, `/tictactoe` et `/akinator`.
+- **Free Games :** `/freegames setup` pour configurer les alertes de jeux gratuits automatiques (via GamerPower).
+- Commandes de gestion : `/freegames plateformes`, `/suivre`, `/retirer`, `/liste`, `/test`.
+
+#### 🛠️ Modération & Utilitaires
+- **Outils de modération :** `/mod` pour gérer facilement les avertissements (warn), mutes, exclusions ou bannissements.
+- **Gestion de communauté :** `/welcome` (bienvenue multilingue), `/rules` ou `/reglement`, `/birthday` (anniversaires) et `/giveaway`.
+- **Divertissement :** `/meme`, `/joke` et un menu `/help` dynamique et multilingue.
 
 ### 🛠️ Installation et Déploiement
 
 #### Prérequis
-* [Node.js](https://nodejs.org) (v16.x ou supérieure)
-* Un jeton de bot Discord (Discord Bot Token)
-* Une clé API Google Gemini
+- Node.js (v16.x ou supérieure)
+- Un jeton de bot Discord (`DISCORD_TOKEN`)
+- Une clé API Google Gemini (`GEMINI_API_KEY`) ou Groq (`GROQ_API_KEY`)
 
 #### Configuration Locale
-1. Clonez le dépôt (une fois configuré en privé) :
-   ```bash
-   git clone https://github.com
-   cd Outlaw-A.I-bot-beta-
-   ```
-2. Installez les dépendances :
-   ```bash
-   npm install
-   ```
-3. Configurez vos variables d'environnement. Créez un fichier `.env` à la racine du projet (copiez le modèle de `.env.example`) :
-   ```env
-   DISCORD_TOKEN=votre_token_discord
-   GEMINI_API_KEY=votre_cle_gemini
-   ```
-4. Lancez le bot :
-   ```bash
-   node index.js
-   ```
+1. Clone le dépôt : `git clone https://github.com`
+2. Installez les dépendances : `npm install`
+3. Créez un fichier `.env` à la racine et ajoutez vos clés (`DISCORD_TOKEN`, `CLIENT_ID`, `GUILD_ID`, `GEMINI_API_KEY`).
+4. Déploie les commandes : `node deploy-commands.js`
+5. Lance le bot : `node index.js`
 
-#### Déploiement Cloud (Hébergement type bot-hosting.net)
-1. Téléversez l'ensemble des fichiers du projet sur votre hébergeur.
+#### Déploiement Cloud (ex: bot-hosting.net)
+1. Téléversez tous les fichiers du projet sur votre panel d'hébergement.
 2. Définissez la variable de démarrage : `STARTUP_FILE=index.js`.
-3. Ajoutez vos clés secrètes (`DISCORD_TOKEN`, etc.) directement dans le panneau des variables d'environnement de votre hébergeur.
-
----
-
+3. Ajoutez vos variables secrètes directement dans l'onglet "Environnement" de l'hébergeur.
 ## 🇬🇧 English Version
 
 ### 🚀 Features
-* **Artificial Intelligence (Gemini):** Advanced integration with Google AI allowing real-time chat interactions with users via bot mentions.
-* **AI Announcements (`/annonce`):** Uses AI logic to generate and publish tailored text posts into a specific channel.
-* **Interactive UI Forms:** Intuitive graphic setups for custom embeds (`/embed`) and interactive reaction roles (`/reactionrole`) utilizing Discord's modal forms.
-* **Multilingual Welcomer:** Automated welcome system supporting multiple languages (FR/EN/ES/BR/RU) assigned according to user language roles.
-* **Dynamic Help Menu (`/help`):** Context-aware help command altering its display dynamically based on the user's role permissions (Admin/Mod vs Regular Member) and language.
-* **YouTube Notifications:** Multi-channel automated tracking with optimized English feed delivery.
-* **Community Systems:** Built-in anniversary tracking, giveaways, moderation utilities, and mini-games.
+
+#### 🤖 Artificial Intelligence & Announcements
+- **Gemini / Groq Integration:** Advanced AI capabilities to chat with community members via bot mentions.
+- **AI Announcements (`/annonce`):** Automatically generates and formats structured posts into any target channel using AI logic.
+
+#### 📈 Levels & XP System
+- **Graphical Display:** `/rank` showcases visual rank cards (canvacard) and `/level` tracks ongoing progress.
+- **Custom Configuration:** `/setup-levels` configures announcement rooms, custom backgrounds, and standard XP algorithms.
+- **Administration:** `/xp set` alters member metrics and `/xp role` links milestone roles directly to levels.
+
+#### 🎫 Tickets & Interaction Forms
+- **Advanced Tickets:** Built-in modular ticket system with automated HTML archive logging and transcripts.
+- **Interactive UI Forms:** Graphic modal setups for customized embedding (`/embed`) and button reaction roles (`/reactionrole`).
+
+#### 🎮 Games & Fun Modules
+- **Built-in Games:** `/snake`, `/slots`, `/findemoji`, `/rps`, `/connect4`, `/tictactoe`, and `/akinator`.
+- **Free Games Feed:** `/freegames setup` automated game deals distribution system pulling from the GamerPower engine.
+
+#### 🛠️ Moderation & Utilities
+- **Moderation Arsenal:** `/mod` handles system flags, formal warnings, timeouts, kicks, and global bans.
+- **Engagement Systems:** Multilingual welcomer (`/welcome`), active birthday trackers (`/birthday`), rules delivery, and giveaways.
 
 ### 🛠️ Setup & Deployment
 
 #### Prerequisites
-* [Node.js](https://nodejs.org) (v16.x or higher)
-* A Discord Bot Token
-* A Google Gemini API Key
-
-#### Local Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com
-   cd Outlaw-A.I-bot-beta-
-   ```
-2. Install the required Node packages:
-   ```bash
-   npm install
-   ```
-3. Set up environment variables. Create a `.env` file in the root directory (refer to `.env.example`):
-   ```env
-   DISCORD_TOKEN=your_discord_token_here
-   GEMINI_API_KEY=your_gemini_key_here
-   ```
-4. Run the application:
-   ```bash
-   node index.js
-   ```
+- Node.js (v16.x or higher)
+- A Discord Bot Token
+- A Google Gemini API Key or Groq API Key
 
 #### Cloud Deployment (e.g., bot-hosting.net)
-1. Upload all project files to your hosting provider.
-2. Configure your startup command variable: `STARTUP_FILE=index.js`.
-3. Fill your secret credentials (`DISCORD_TOKEN`, etc.) securely via your host's environment settings dashboard.
+1. Upload all workspace project files directly onto your host file manager.
+2. Ensure your environmental startup variable is configured: `STARTUP_FILE=index.js`.
+3. Save your private API keys securely within the dashboard environment variables.
 
 ---
 
-## 📈 Changelog (v1.10)
-* Added modal interactive forms for both `/embed` and `/reactionrole`.
-* Forced YouTube alert streams into English formatting.
-* Reworked global welcome workflow to automatically inherit role-based language filters.
-* Optimized `/help` sorting tree based on localization tags and permission tiers.
-* Built-in `/annonce` module leveraging Gemini AI content generations.
-* Enforced full application command synchronizations on startup.
+## 📂 Structure & Architecture
 
----
-*Developed for the **Gaming Outlaws Discord** community.*
-
-https://discord.gg/W5eJqyukqn
