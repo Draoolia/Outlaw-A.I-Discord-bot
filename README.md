@@ -3,15 +3,8 @@
 Bot multifonction pour Discord — version 1.10.0
 
 ## 🌍 Language / Langue
-details>
-<summary><b>🇫🇷 Version Française (Cliquez pour ouvrir)</b></summary>
-... [Insérer le contenu en français : Fonctionnalités, Installation, Déploiement] ...
-</details>
-
-<details>
-<summary><b>🇬🇧 English Version (Click to expand)</b></summary>
-... [Insert English content: Features, Setup, Deployment] ...
-</details>
+🇫🇷 FRENCH
+🇬🇧 ENGLISH 
 
 ## 🇫🇷 Version Française
 
