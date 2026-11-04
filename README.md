@@ -1,94 +1,125 @@
-# Gaming Outlaws Bot (Outlaw A.I.)
+# 🎮 Gaming Outlaws Bot - Guide d'installation complet (v1.10.0)
 
-Bot multifonction pour Discord — version 1.10.0
-
-## 🌍 Language / Langue
-- Français
-- English
-
-## 🇫🇷 Version Française
-
-### 🚀 Fonctionnalités
-
-#### 🤖 Intelligence Artificielle & Annonces
-- **Intégration Gemini / Groq :** IA avancée pour interagir directement avec les membres via mention du bot.
-- **Annonces IA (`/annonce`) :** Génération automatique de messages structurés par l'IA dans le salon de ton choix.
-
-#### 📈 Niveaux & XP
-- **Cartes graphiques :** `/rank` affiche une carte graphique personnalisée (canvacard) et `/level` montre l'XP.
-- **Configuration :** `/setup-levels` pour définir les salons d'annonce, les couleurs de fond et l'XP de base.
-- **Administration :** `/xp set` pour modifier l'XP d'un membre et `/xp role` pour lier un rôle à un niveau.
-- Gain d'XP automatique et fluide par message envoyé.
-
-#### 🎫 Tickets & Formulaires
-- **Tickets avancés :** Système complet avec génération automatique d'archives et de transcripts HTML.
-- **Formulaires Graphiques :** `/embed` et `/reactionrole` pour créer des embeds et rôles-réactions via l'interface Discord.
-
-#### 🎮 Jeux & Divertissement
-- **Jeux intégrés :** `/snake`, `/slots`, `/findemoji`, `/rps`, `/connect4`, `/tictactoe` et `/akinator`.
-- **Free Games :** `/freegames setup` pour configurer les alertes de jeux gratuits automatiques (via GamerPower).
-- Commandes de gestion : `/freegames plateformes`, `/suivre`, `/retirer`, `/liste`, `/test`.
-
-#### 🛠️ Modération & Utilitaires
-- **Outils de modération :** `/mod` pour gérer facilement les avertissements (warn), mutes, exclusions ou bannissements.
-- **Gestion de communauté :** `/welcome` (bienvenue multilingue), `/rules` ou `/reglement`, `/birthday` (anniversaires) et `/giveaway`.
-- **Divertissement :** `/meme`, `/joke` et un menu `/help` dynamique et multilingue.
-
-### 🛠️ Installation et Déploiement
-
-#### Prérequis
-- Node.js (v16.x ou supérieure)
-- Un jeton de bot Discord (`DISCORD_TOKEN`)
-- Une clé API Google Gemini (`GEMINI_API_KEY`) ou Groq (`GROQ_API_KEY`)
-
-#### Configuration Locale
-1. Clone le dépôt : `git clone https://github.com`
-2. Installez les dépendances : `npm install`
-3. Créez un fichier `.env` à la racine et ajoutez vos clés (`DISCORD_TOKEN`, `CLIENT_ID`, `GUILD_ID`, `GEMINI_API_KEY`).
-4. Déploie les commandes : `node deploy-commands.js`
-5. Lance le bot : `node index.js`
-
-#### Déploiement Cloud (ex: bot-hosting.net)
-1. Téléversez tous les fichiers du projet sur votre panel d'hébergement.
-2. Définissez la variable de démarrage : `STARTUP_FILE=index.js`.
-3. Ajoutez vos variables secrètes directement dans l'onglet "Environnement" de l'hébergeur.
-## 🇬🇧 English Version
-
-### 🚀 Features
-
-#### 🤖 Artificial Intelligence & Announcements
-- **Gemini / Groq Integration:** Advanced AI capabilities to chat with community members via bot mentions.
-- **AI Announcements (`/annonce`):** Automatically generates and formats structured posts into any target channel using AI logic.
-
-#### 📈 Levels & XP System
-- **Graphical Display:** `/rank` showcases visual rank cards (canvacard) and `/level` tracks ongoing progress.
-- **Custom Configuration:** `/setup-levels` configures announcement rooms, custom backgrounds, and standard XP algorithms.
-- **Administration:** `/xp set` alters member metrics and `/xp role` links milestone roles directly to levels.
-
-#### 🎫 Tickets & Interaction Forms
-- **Advanced Tickets:** Built-in modular ticket system with automated HTML archive logging and transcripts.
-- **Interactive UI Forms:** Graphic modal setups for customized embedding (`/embed`) and button reaction roles (`/reactionrole`).
-
-#### 🎮 Games & Fun Modules
-- **Built-in Games:** `/snake`, `/slots`, `/findemoji`, `/rps`, `/connect4`, `/tictactoe`, and `/akinator`.
-- **Free Games Feed:** `/freegames setup` automated game deals distribution system pulling from the GamerPower engine.
-
-#### 🛠️ Moderation & Utilities
-- **Moderation Arsenal:** `/mod` handles system flags, formal warnings, timeouts, kicks, and global bans.
-- **Engagement Systems:** Multilingual welcomer (`/welcome`), active birthday trackers (`/birthday`), rules delivery, and giveaways.
-
-### 🛠️ Setup & Deployment
-
-#### Prerequisites
-- Node.js (v16.x or higher)
-- A Discord Bot Token
-- A Google Gemini API Key or Groq API Key
-
-#### Cloud Deployment (e.g., bot-hosting.net)
-1. Upload all workspace project files directly onto your host file manager.
-2. Ensure your environmental startup variable is configured: `STARTUP_FILE=index.js`.
-3. Save your private API keys securely within the dashboard environment variables.
+Ce bot est **prêt à l'emploi**. Tu n'as pas besoin de savoir coder.
 
 ---
 
-## 📂 Structure & Architecture
+## 🌍 Language / Langue
+
+<details>
+<summary><b>🇫🇷 Cliquez ici pour la Version Française</b></summary>
+
+### 📋 Ce que le bot sait faire
+
+#### 🔒 Réservé aux Admins / Modérateurs
+- **Intelligence Artificielle** ➔ `/annonce` (générer des annonces structurées par l'IA)
+- **Niveaux & XP** ➔ `/setup-levels` (configurer le salon, la couleur et le fond des cartes d'XP)
+- **Compteur** ➔ `/setup-counting` (configurer le salon de comptage automatisé)
+- **Jeux Gratuits** ➔ `/freegames setup` (configurer les alertes automatiques GamerPower)
+- **Rôles par réactions** ➔ `/reactionrole` (créer des boutons ou emojis uniques/multiples)
+- **Notifications YouTube** ➔ `/youtube` (ajouter le suivi automatique d'une chaîne)
+- **Giveaways** ➔ `/giveaway` (créer, lister, relancer ou finir un tirage au sort)
+- **Modération** ➔ `/mod` (gérer les avertissements, mutes, exclusions et bannissements)
+
+#### 👥 Pour tous les membres
+- **IA Interactive** ➔ Mentionne le bot `@Bot ta question` pour lui parler (Gemini/Groq)
+- **Niveaux & Progression** ➔ `/rank` (carte graphique canvacard) et `/level` (XP actuelle)
+- **Tickets d'aide** ➔ Système complet avec boutons et transcripts de sauvegarde au format HTML
+- **Jeux intégrés** ➔ `/snake`, `/slots`, `/findemoji`, `/rps`, `/connect4`, `/tictactoe`, `/akinator`
+- **Divertissement** ➔ `/embed` (créateur avancé), `/welcome` (bienvenue multilingue), `/meme`, `/joke`, `/birthday`
+
+---
+
+### 🚀 INSTALLATION ÉTAPE PAR ÉTAPE
+
+#### Étape 1 : Créer le bot sur Discord
+1. Va sur **https://discord.com**
+2. Clique sur **New Application** et donne un nom (ex: `Outlaw AI`)
+3. Va dans l'onglet **Bot** à gauche et clique sur **Reset Token** ➔ **Copy** (garde-le précieusement)
+4. Active ces 3 options (Privileged Gateway Intents) :
+   - **Presence Intent**
+   - **Server Members Intent**
+   - **Message Content Intent**
+5. Va dans **OAuth2 ➔ URL Generator**, coche **bot** + **applications.commands**
+6. Dans *Bot Permissions*, coche : *Manage Roles, Moderate Members, Ban Members, Manage Messages, Send Messages, Embed Links, Attach Files, Read Message History, Add Reactions, Use External Emojis*.
+7. Copie le lien généré en bas et ouvre-le pour inviter le bot sur ton serveur.
+
+#### Étape 2 : Récupérer les IDs
+1. Dans Discord ➔ Paramètres utilisateur ➔ Avancés ➔ Active le **Mode développeur**.
+2. Clic droit sur l'icône de ton serveur ➔ **Copier l'identifiant du serveur** (c'est ton `GUILD_ID`).
+3. Sur le Discord Developer Portal ➔ Ton application ➔ Copie l'**Application ID** (c'est ton `CLIENT_ID`).
+
+#### Étape 3 : Obtenir une clé API IA
+1. Va sur **https://google.com** et crée une clé gratuite (**Gemini**).
+2. *(Optionnel)* Prends une clé sur Groq si tu préfères utiliser leur modèle.
+
+#### Étape 4 : Configurer les fichiers
+1. Clone le dépôt : `git clone https://github.com`
+2. Renomme le fichier `.env.example` en `.env` à la racine et remplis-le :
+```text
+DISCORD_TOKEN=ton_token_ici
+CLIENT_ID=ton_application_id_ici
+GUILD_ID=ton_id_serveur_ici
+GEMINI_API_KEY=ta_cle_gemini_ici
+```
+
+#### Étape 5 : Hébergement (ex: bot-hosting.net)
+1. Crée un serveur **Node.js** sur ton hébergeur et téléverse tous les fichiers.
+2. Ajoute les mêmes variables d'environnement (`DISCORD_TOKEN`, etc.) sur le panel de l'hébergeur.
+3. Dans la console, installe les dépendances : `npm install`
+4. Enregistre les commandes slash : `node deploy-commands.js`
+5. Démarre le bot : `node index.js` (ou clique sur **Start**).
+
+</details>
+<details>
+<summary><b>🇬🇧 Click here for the English Version</b></summary>
+
+### 📋 What the Bot Can Do
+* **Admin & Moderation:** Tools for `/annonce` (AI posts), `/setup-levels`, `/setup-counting`, `/freegames setup`, `/reactionrole`, `/youtube` alerts, `/giveaway`, and `/mod` actions.
+* **Member Features:** AI chat via mentions (`@Bot`), `/rank` & `/level`, support ticket system with HTML logs, mini-games (`/snake`, `/slots`, `/tictactoe`, etc.), and `/welcome` or `/embed` tools.
+
+### 🚀 STEP-BY-STEP SETUP GUIDE
+1. **Discord Application:** Create an app at the [Discord Developer Portal](https://discord.com), copy your Bot Token, enable the 3 *Privileged Gateway Intents* (Presence, Server Members, Message Content), and invite the bot using generated OAuth2 scopes/permissions.
+2. **Server & Client IDs:** Enable Developer Mode in Discord to copy your `GUILD_ID` and the `CLIENT_ID` from the Developer Portal.
+3. **AI API Key:** Generate a free Gemini key at [Google AI Studio](https://google.com).
+4. **Workspace Config:** Clone the repository (`git clone https://github.com`), rename `.env.example` to `.env`, and fill in your `DISCORD_TOKEN`, `CLIENT_ID`, `GUILD_ID`, and `GEMINI_API_KEY`.
+5. **Hosting & Boot:** Install dependencies with `npm install`, deploy slash commands via `node deploy-commands.js`, and start the bot with `node index.js`.
+
+</details>
+
+---
+
+## ⚙️ Configuration importante sur ton serveur / Server Requirements
+1. **Rôles de langues :** Créez les rôles `FR`, `EN`, `BR`, `ES`, `RU`.
+2. **Rôles Staff :** Créez vos rôles modérateurs (`Admin`, `Administrateur`, `Moderator`, `Modérateur`, `Mod`).
+3. **Hiérarchie :** Placez le rôle du bot tout en haut de la liste de vos rôles.
+
+---
+
+## ❗ Problèmes courants / Troubleshooting
+
+| Problème / Issue | Solution |
+| :--- | :--- |
+| Les commandes n’apparaissent pas | Relancez `node deploy-commands.js` |
+| Le bot ne répond pas aux mentions | Vérifiez que l'*Message Content Intent* est actif sur le portail |
+| Erreur `better-sqlite3` | Exécutez `npm install better-sqlite3 --build-from-source` |
+| Le bot ne peut pas mute/ban | Remontez le rôle du bot au-dessus de la cible |
+
+---
+
+## 📁 Structure des fichiers / Project Tree
+```text
+bot/
+├── index.js              ➔ Point d'entrée principal / Core entry point
+├── deploy-commands.js    ➔ Enregistrement des commandes slash
+├── config.js             ➔ Paramètres globaux
+├── package.json          ➔ Dépendances du projet
+├── .env                  ➔ Clés privées (configuration)
+├── commands/             ➔ Modules de commandes (admin, public, games)
+├── events/               ➔ Gestionnaires d'événements Discord
+├── utils/                ➔ Outils (SQLite, IA, traducteurs)
+data/                 ➔ Base de données SQLite locale
+```
+
+---
+*Developed for the **Gaming Outlaws Discord** community.*
